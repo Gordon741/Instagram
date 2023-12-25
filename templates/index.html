@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Instagram</title>
+
+    <!-- Custom CSS link -->
+    <link rel="stylesheet" href="/static/styles.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/static/favicon.png" type="image/x-icon">
+
+    <!-- Boxicons CDN link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <div class="image__login">
+        <img src="/static/instagramimg.png" alt="">
+    </div>
+
+    <div class="insta__form">
+        <div class="login__form">
+            <img src="/static/instalogo.png">
+
+            <form class="form" method="post" action="/">
+                <input type="text" name="username" placeholder="Phone number, username, or email">
+                <input type="password" name="password" placeholder="Password">
+                <button type="submit">Log in</button>
+                <span class="or">OR</span>
+            </form>
+
+            <h3>
+                <i class='bx bxl-facebook-circle'></i>
+                Log in with Facebook
+            </h3>
+
+            <!-- Error message display -->
+            {% if error %}
+                {% set message = error.replace('Please', 'Please<br>') %}
+                <p class="error-message">{{ message | safe }}</p>
+            {% endif %}
+
+            <span class="forget">
+                Forgot Password?
+            </span>
+        </div>
+    </div>
+</body>
+</html>
