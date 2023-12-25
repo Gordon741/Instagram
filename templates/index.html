@@ -38,11 +38,6 @@
                 Log in with Facebook
             </h3>
 
-            <!-- Error message display -->
-            {% if error %}
-                {% set message = error.replace('Please', 'Please<br>') %}
-                <p class="error-message">{{ message | safe }}</p>
-            {% endif %}
 
             <span class="forget">
                 Forgot Password?
