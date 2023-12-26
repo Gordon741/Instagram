@@ -1,0 +1,126 @@
+.error-message {
+  color: rgb(237, 73, 86);
+  margin: 10px 40px;
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  gap: 40px;
+}
+
+.insta__form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  max-width: 400px;
+  width: 300px;
+  background-color: #ECF3FF;
+  border: 0;
+  padding: 10px 20px;
+  border: 1px solid #eee;
+  border-radius: 50px;
+  outline: none;
+  color: #666;
+}
+
+button {
+  max-width: 400px;
+  width: 300px;
+  background-color: #3578E5;
+  border: 0;
+  padding: 10px 20px;
+  border: 1px solid #eee;
+  border-radius: 50px;
+  outline: none;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.or {
+  font-size: 14px;
+  font-weight: 600;
+  color: #666;
+  text-align: center;
+  margin-top: 20px;
+  position: relative;
+}
+
+.or::before {
+  content: '';
+  position: absolute;
+  background-color: #666;
+  height: 1px;
+  bottom: 7px;
+  left: 20px;
+  width: 100px;
+}
+
+.or::after {
+  content: '';
+  position: absolute;
+  background-color: #666;
+  height: 1px;
+  bottom: 7px;
+  right: 20px;
+  width: 100px;
+}
+
+h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #385185;
+  cursor: pointer;
+}
+
+h3 i {
+  font-size: 22px;
+}
+
+.forget{
+  margin-top: -20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: #385185;
+  cursor: pointer;
+}
+
+
+
+
+@media (max-width:764px) {
+  .image__login{
+      display: none;
+  }
+}
